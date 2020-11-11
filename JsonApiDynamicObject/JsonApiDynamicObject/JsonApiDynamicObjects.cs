@@ -4,6 +4,10 @@ using System.Dynamic;
 
 namespace JsonApiDynamicObject
 {
+
+    /// <summary>
+    /// Provides the necessary methods to standardize dynamic objects and that can be serialized according to JsonApi
+    /// </summary>
     public static class JsonApiDynamicObjects
     {
         private static Dictionary<string, object> Data { get; set; } = new Dictionary<string, object>();
@@ -45,6 +49,13 @@ namespace JsonApiDynamicObject
                 Data["attributes"] = Attributes;
         }
 
+        /// <summary>
+        /// Standardize, according to JsonApi, a dynamic object contained in a Dictionary
+        /// </summary>
+        /// <param name="obj">Dictionary containing the attributes of the dynamic object</param>
+        /// <returns>
+        /// Standardized dynamic object according to JsonApi
+        /// </returns>
         public static dynamic getRootObject(IDictionary<string, object> obj)
         {
             StandardizeObject(obj);
@@ -54,6 +65,13 @@ namespace JsonApiDynamicObject
             return root;
         }
 
+        /// <summary>
+        /// Standardize, according to JsonApi, a dynamic object contained in a ExpandoObject
+        /// </summary>
+        /// <param name="obj">ExpandoObject containing the attributes of the dynamic object</param>
+        /// <returns>
+        /// Standardized dynamic object according to JsonApi
+        /// </returns>
         public static dynamic getRootObject(ExpandoObject obj)
         {
             var dic = (IDictionary<string, object>)obj;

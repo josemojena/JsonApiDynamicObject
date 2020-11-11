@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonApiDynamicObject", "JsonApiDynamicObject\JsonApiDynamicObject.csproj", "{FADFAECB-79EC-46AF-ABA5-FD35647DB065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonApiDynamicObject", "JsonApiDynamicObject\JsonApiDynamicObject.csproj", "{FADFAECB-79EC-46AF-ABA5-FD35647DB065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{2535083F-21B3-427E-9E6F-EDC627E9EF6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FADFAECB-79EC-46AF-ABA5-FD35647DB065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FADFAECB-79EC-46AF-ABA5-FD35647DB065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FADFAECB-79EC-46AF-ABA5-FD35647DB065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2535083F-21B3-427E-9E6F-EDC627E9EF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2535083F-21B3-427E-9E6F-EDC627E9EF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2535083F-21B3-427E-9E6F-EDC627E9EF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2535083F-21B3-427E-9E6F-EDC627E9EF6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
